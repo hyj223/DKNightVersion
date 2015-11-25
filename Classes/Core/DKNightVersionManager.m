@@ -28,7 +28,7 @@ CGFloat const DKNightVersionAnimationDuration = 0;
     static dispatch_once_t once;
     static DKNightVersionManager *instance;
     dispatch_once(&once, ^{
-        instance = [self new];
+        instance = [[self alloc] init];
     });
     return instance;
 }
